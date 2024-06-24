@@ -9,4 +9,10 @@ class Categoria {
         $this->tipo = $tipo;
         $this->icona = $icona;
     }
-}
+
+    public function setIcon($tipo) {
+        if($tipo == "Cani") {
+            $this->tipo = '<i class="fa-solid fa-dog"></i>';
+        }
+    }
+};
