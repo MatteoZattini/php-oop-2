@@ -30,12 +30,22 @@ include __DIR__ . "/data.php"
             <div class="col-12 d-flex flex-wrap">
                 <?php foreach ($prodottiCibo as $prodotto) { ?>
                     <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="https://picsum.photos/id/40/200/100" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"><?= $prodotto->nome ?></h5>
                             <div class="card-text">
                                 <p><?= $prodotto->categoria->tipo ?></p>
                                 <p><?= $prodotto->categoria->icona ?></p>
+                                <?php
+                                if($prodotto->categoria->icona == "icona Cane") { ?>
+                                   <i class="fa-solid fa-dog"></i>
+                                <?php }
+                                ?>
+                                <?php
+                                if($prodotto->categoria->icona == "icona Gatto") { ?>
+                                   <i class="fa-solid fa-cat"></i>
+                                <?php }
+                                ?>
                                 <p><?= $prodotto->prezzo . " euro" ?></p> 
                                 <p><?= $prodotto->peso ?></p>
                                 <p><?= $prodotto->agetarget ?></p>
@@ -53,12 +63,22 @@ include __DIR__ . "/data.php"
             <div class="col-12 d-flex flex-wrap">
                 <?php foreach ($prodottiGioco as $prodotto) { ?>
                     <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="https://picsum.photos/id/237/200/100" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"><?= $prodotto->nome ?></h5>
                             <div class="card-text">
                                 <p><?= $prodotto->categoria->tipo ?></p>
                                 <p><?= $prodotto->categoria->icona ?></p>
+                                <?php
+                                if($prodotto->categoria->icona == "icona Cane") { ?>
+                                   <i class="fa-solid fa-dog"></i>
+                                <?php }
+                                ?>
+                                <?php
+                                if($prodotto->categoria->icona == "icona Gatto") { ?>
+                                   <i class="fa-solid fa-cat"></i>
+                                <?php }
+                                ?>
                                 <p><?= $prodotto->prezzo . " euro" ?></p> 
                                 <p><?= $prodotto->durezza ?></p>
                             </div>
