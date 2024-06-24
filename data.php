@@ -5,6 +5,6 @@ include __DIR__ . "/models/Cibo.php";
 include __DIR__ . "/models/Gioco.php";
 
 
-$prodotti_cani = [
-
+$prodotti = [
+    new Cibo("crocchette", 10, "10kg", "puppy")
 ];

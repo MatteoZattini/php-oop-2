@@ -1,5 +1,5 @@
 <?php
-class Cibo extends Prodotto
+class Cibo
 {
     public $peso;
     public $agetarget;
