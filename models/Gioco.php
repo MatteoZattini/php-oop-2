@@ -12,4 +12,9 @@ class Gioco extends Prodotto
         $this->durezza = $durezza;
         $this->categoria = $categoria;
     }
+
+    public function getClassName($valore) {
+        echo "Questo prodotto è di classe " . get_class($valore);
+        
+    }
 }

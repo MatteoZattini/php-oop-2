@@ -12,4 +12,9 @@ class Cibo extends Prodotto
         $this->agetarget = $agetarget;
         $this->categoria = $categoria;
     }
+
+    public function getClassName($valore) {
+        echo "Questo prodotto è di classe " .  get_class($valore);
+        
+    }
 }
