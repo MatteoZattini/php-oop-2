@@ -6,16 +6,20 @@ class Cliente {
     public $eta;
     public $carrello = array();
 
-    public function __construct($nome, $cognome, $eta, $carrello)
+    public function __construct($nome, $cognome, $eta)
     {
         $this->nome = $nome;
         $this->cognome = $cognome;
         $this->eta = $eta;
-        $this->carrello = $carrello;
+        
     }
 
     public function addToCart($valore) {
-        array_push($carrello, $valore);
+        array_push($this->carrello, $valore);
+    }
+
+    public function getCart() {
+        return $this->carrello;
     }
 
 };

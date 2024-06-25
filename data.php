@@ -26,4 +26,4 @@ $prodottiGioco = [
     new Gioco(new Categoria("Gatti", "icona Gatto"), "legnetto", 5, "morbido"),
 ];
 
-new Cliente("Matteo", "Zattini", "29", "ciao") ),
+$user = new Cliente("Matteo", "Zattini", 29);
