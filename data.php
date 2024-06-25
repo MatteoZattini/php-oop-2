@@ -3,6 +3,7 @@ include __DIR__ . "/models/Prodotto.php";
 include __DIR__ . "/models/Categoria.php";
 include __DIR__ . "/models/Cibo.php";
 include __DIR__ . "/models/Gioco.php";
+include __DIR__ . "/models/Cliente.php";
 
 
 $prodottiCibo = [
@@ -24,3 +25,5 @@ $prodottiGioco = [
     new Gioco(new Categoria("Cani", "icona Cane"), "legnetto", 5, "durissimo"),
     new Gioco(new Categoria("Gatti", "icona Gatto"), "legnetto", 5, "morbido"),
 ];
+
+new Cliente("Matteo", "Zattini", "29", "ciao") ),
